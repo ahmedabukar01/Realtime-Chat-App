@@ -1,0 +1,146 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:#ddd;
+}
+.login form{
+  width:400px;
+  height:400px;
+  background:#222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.login form input{
+  border:none;
+  margin:10px 0;
+  height: 35px;
+  padding: 0 5px;
+  font-size: 17px;
+  outline: none;
+  border-radius: 10px;
+}
+.login form label{
+  font-size: 30px;
+  color:#fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+.login form button{
+  padding: 9px 19px;
+  font-size: 17px;
+  border:none;
+  border-radius: 10px;
+  background:#f1356d;
+  color:#fff;
+  cursor: pointer;
+}
+
+/* msg */
+.chat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:#444;
+}
+.chat-box{
+  background:#fff;
+  width:250px;
+  height: 400px;
+  border-radius: 10px;
+  position: relative;
+}
+.chat-box .msg-header{
+  background:#1f90cf;
+  height:40px;
+  padding:10px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color:#fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.msg-body{
+  background:#fff;
+  height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.msg-footer{
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width:100%;
+}
+.msg-footer form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.msg-footer input{
+  font-size: 16px;
+  height: 100%;
+  outline:none;
+  border:none;
+  width:100%;
+  padding-left: 5px;
+  background:#ddf;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.msg-footer .icon{
+  font-size: 30px;
+  color:#fff;
+  background:#1f90cf;
+  height: 100%;
+}
+
+.msg{
+  margin:5px;
+  width:70%;
+}
+.msg-top{
+  display: flex;
+  justify-content: space-between;
+  padding:0 5px;
+}
+.msg-top .name{
+  font-size: 15px;
+  font-weight: bold;
+}
+.msg-top .date{
+  font-size: 13px;
+}
+.msg-text{
+  background:#ddd;
+  padding:5px;
+  border-radius: 5px;
+}
+
+.msg#me{
+  align-self: flex-end;
+  margin-left: auto;
+}
+.msg#me .msg-text{
+  background:#1f90cf;
+  color:#fff;
+}
+
+.scroll{
+  height:100%;
+}
